@@ -16,15 +16,10 @@
         <div class="container fluid">
                 <div class="row">
                         {% for result in results %}
-                        
                         <div class="col-sm-4 text-center ">
-                                <a href='coat/id/{{result[0]}}'></a>
-                                <img src= {{result[3]}} width=150 /> <br>
+                                <img src=  {{result[3]}} width=150 /> <br>
                                 <div>{{result[2]}}</div>  <br>
-                                </a>
                         </div>
-                        
-
                         {% endfor %}
                 </div>
 
