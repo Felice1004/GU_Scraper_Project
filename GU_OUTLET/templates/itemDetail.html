@@ -8,26 +8,19 @@
 </head>
 <body>
         <div class="jumbotron bg-info text-white text-center ">
-                <h1><a href='/'>GU OUTLET</a></h1>
-                <h3>PARKA</h3>
-                <div>連帽外套</div><br>
-               
+            <h1><a href='/'>GU OUTLET</a></h1>
+            <h3>YOUR FREEDOM 自由煥然一新</h3>
+            <div>外套系列，現正熱賣中</div> <br>
         </div>
-        <div class="container fluid">
-                <div class="row">
+        <div class="container fluid text-center">
                         {% for result in results %}
-                        
-                        <div class="col-sm-4 text-center ">
-                                <a href='coat/id/{{result[0]}}'>
-                                <img src= {{result[3]}} width=250 /> <br>
-                                <div>{{result[2]}}</div>  <br>
-                                </a>
+                        <div class="col-sm-12 text-center ">
+                                <img src=  {{result[3]}} width=300 />
+                                <h2>NT$ {{result[5]}}</h2> <!--price-->
+                                <div>{{result[2]}}</div>  <!--title-->
+                                
                         </div>
-                        
-
                         {% endfor %}
-                </div>
-
         </div>
 </body>
 </html>
